@@ -1,1 +1,16 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= info.pageTitle %></title>
+</head>
+<body>
+<h1><%= info.tagline %></h1>
+<h2><%= info.details.name %> you have <%= info.details.age %> and here is your hobbies:</h2>
+<br>
+<ul>
+	<% info.details.hobbies.forEach(function(name){ %>
+		<li><%= name %></li>
+	<%})%>
+</ul>
+</body>
+</html>
